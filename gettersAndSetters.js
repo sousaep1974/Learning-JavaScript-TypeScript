@@ -37,6 +37,6 @@ function createProduct(name) {
     };
 }
 
-    const p2 = createProduct('Camiseta');
-    p2.name = "Qualquer coisa.";
-    console.log(p2.name);
+const p2 = createProduct('Camiseta');
+p2.name = "Qualquer coisa.";
+console.log(p2.name);
