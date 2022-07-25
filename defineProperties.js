@@ -4,7 +4,8 @@ function Product(name, price, stock) {
     this.name = name;
     this.price = price;
     this.stock = stock;
-
+  
+    
     // Here you define the properties of only one attribute
     Object.defineProperty(this, 'stock', {
         enumerable: false, // (true) show key, (false) hide key
@@ -40,5 +41,9 @@ function Product(name, price, stock) {
 
 const p1 = new Product('Camiseta', 20, 3);
 console.log(p1)
+console.log(Object.getOwnPropertyDescriptor(p1, 'name')); // show properties
+console.log(Object.keys(p1)); // show keys
+console.log(Object.values(p1)); // show values
+console.log(Object.entries(p1)); // show keys and values
+for (let key in p1) { console.log(key) }
 
-//for (let key in p1) { console.log(key) }

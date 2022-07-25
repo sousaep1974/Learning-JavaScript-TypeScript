@@ -3,7 +3,8 @@
 function Product(name, price, stock) {
     this.name = name;
     this.price = price;
-    //this.stock = stock;
+    this.stock = stock;
+    console.log(Object.getOwnPropertyDescriptor(Product, 'name')); 
 
     /* Here you define the property 'stock' */
     Object.defineProperty(this, 'stock', {
