@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "oderwat.indent-rainbow",
+        "sirtori.indenticator",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "github.remotehub",
+        "nathanchapman.JavaScriptSnippets"
+    ]
+}
