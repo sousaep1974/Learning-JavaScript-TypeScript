@@ -1,3 +1,4 @@
+// PROMISES
 function rand(min, max) {
     mim = 1000;
     max = 1000;
@@ -8,7 +9,7 @@ function waitThere(msg, time) {
     return new Promise((resolve, reject) => {
         if (typeof msg !== 'string') reject(new Error('Tipo de dados inseridos está errado'));
         setTimeout(() => {
-            resolve(msg);
+            resolve(msg.toUpperCase() + ' - Passei na promise');
         }, time);
     });
 }
@@ -20,7 +21,7 @@ waitThere('Conexão com DB', rand(1, 3))
     })
     .then(aswer => {
         console.log(aswer);
-        return waitThere(2, rand(1, 3));
+        return waitThere('Buscando os dados na BASE', rand(1, 3));
     }).then(aswer => {
         console.log(aswer);
     }).then(() => {
