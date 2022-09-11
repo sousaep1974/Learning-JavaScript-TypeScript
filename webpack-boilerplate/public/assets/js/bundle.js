@@ -1,2 +1,2 @@
-console.log("Eu sou edivan");
+(()=>{"use strict";function e(e,o){for(var n=0;n<o.length;n++){var t=o[n];t.enumerable=t.enumerable||!1,t.configurable=!0,"value"in t&&(t.writable=!0),Object.defineProperty(e,t.key,t)}}function o(o,n,t){return n&&e(o.prototype,n),t&&e(o,t),Object.defineProperty(o,"prototype",{writable:!1}),o}var n=o((function e(o,n,t){!function(e,o){if(!(e instanceof o))throw new TypeError("Cannot call a class as a function")}(this,e),this.name=o,this.sirname=n,this.age=t}));console.log("Edivan"),console.log("Sousa"),console.log(48),console.log(10);var t=new n("Filipe","Sousa",3);console.log(t)})();
 //# sourceMappingURL=bundle.js.map
