@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --black: #000000;
+  --grey: #272b33;
+  --light-grey: #35363a;
+  --red: #dc143c;
+  --orange: #ff4500;
+  --yellow: #ffcf00;
+  --yellow-green: #9acd32;
+  --green: #006400;
+  --white: #ffffff;
+  --ice: #f0f8ff;
+  --blue: #000080;
+  --slate-blue: #6a5acd;
+  --font-lexend: "Lexend", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 10px;
+  padding: 10px;
+  background: var(--black);
+  font-family: "Lexend", sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: var(--white);
+  font-weight: 200;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: var(--grey);
+  padding: 20px;
+  border: solid 1px;
+  border-color: var(--slate-blue);
+  border-radius: 5px;
+}
+
+.title{
+  color: var(--orange);
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.senha-gerada {
+  font-size: 25PX;
+  color: var(--yellow);
+  margin: 40px 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+button {
+  display: block;
+  margin: 40px 0;
+  font-size: 1em;
+}
