@@ -1,3 +1,10 @@
+import './assets/css/style.css';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import executa from './modules/promises';
+
+executa();
+
 import GeraCPF from './modules/GeraCPF';
 import './assets/css/style.css';
 
