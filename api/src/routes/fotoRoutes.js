@@ -1,13 +1,9 @@
 import { Router } from "express";
-import multer from "multer";
-
+import loginRequired from "../middlewares/loginRequired";
 import FotoController from "../controllers/FotoController";
-import multerConfig from "../config/multerConfig";
-
-const upload = multer(multerConfig);
 
 const router = new Router();
 
-router.post("/", upload.single("photoFile"), FotoController.store);
+router.post("/", loginRequired, FotoController.store);
 
 export default router;
