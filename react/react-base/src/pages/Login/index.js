@@ -1,15 +1,18 @@
 import React from "react";
-import { Title } from "./styled";
+
+import { Container } from "../../styles/GlobalStyles";
+import { Title, Paragrafo } from "./styled";
 
 function Login() {
   return (
-    <>
+    <Container>
       <Title>
         TESTE
         <small>Oi</small>
       </Title>
-      <p>Loren ipsum</p>
-    </>
+      <Paragrafo>Loren ipsum</Paragrafo>
+      <a href="">Oi</a>
+    </Container>
   );
 }
 
