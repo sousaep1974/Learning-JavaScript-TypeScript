@@ -11,7 +11,8 @@ function Login() {
         <small>Oi</small>
       </Title>
       <Paragrafo>Loren ipsum</Paragrafo>
-      <a href="">Oi</a>
+
+      <button type="buttun">Send</button>
     </Container>
   );
 }
