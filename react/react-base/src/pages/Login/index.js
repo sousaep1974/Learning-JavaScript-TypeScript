@@ -8,7 +8,7 @@ function Login() {
     <Container>
       <Title>
         TESTE
-        <small>Oi</small>
+        <small>User</small>
       </Title>
       <Paragrafo>Loren ipsum</Paragrafo>
 
