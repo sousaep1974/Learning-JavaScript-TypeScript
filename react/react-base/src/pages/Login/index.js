@@ -7,7 +7,7 @@ function Login() {
   return (
     <Container>
       <Title>
-        TESTE
+        Login
         <small>User</small>
       </Title>
       <Paragrafo>Loren ipsum</Paragrafo>
