@@ -1,37 +1,36 @@
 module.exports = {
-	"env": {
-		"browser": true,
-		"es2021": true
-	},
-	"extends": [
-		"eslint:recommended",
-		"plugin:react/recommended"
-	],
-	"overrides": [
-	],
-	"parserOptions": {
-		"ecmaVersion": "latest",
-		"sourceType": "module"
-	},
-	"plugins": [
-		"react"
-	],
-	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
-		"quotes": [
-			"error",
-			"double"
-		],
-		"semi": [
-			"error",
-			"always"
-		]
-	}
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+    node: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+  ],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+      requireConfigFile: false,
+    },
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+  plugins: ["react", "prettier", "react-hooks"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  rules: {
+    "react/react-in-jsx-scope": "off",
+  },
 };
