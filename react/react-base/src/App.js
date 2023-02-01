@@ -8,17 +8,13 @@ import Header from "./components/Header";
 import Routes from "./routes";
 
 function App() {
-    return (
-        <Router history={history}>
-            <Header />
-            <Routes />
-            <GlobalStyles />
-            <ToastContainer autoClose={3000} className="toast-container" />
-        </Router>
-    );
+  return (
+    <Router history={history}>
+      <Header />
+      <Routes />
+      <GlobalStyles />
+      <ToastContainer autoClose={3000} className="toast-container" />
+    </Router>
+  );
 }
 export default App;
-
-
-
-
